@@ -4,59 +4,70 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>goit-markup-hw-01</title>
+    <title>goit-markup-hw-02</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body>
     <!-- Шапка сайту -->
-    <header>
+    <header class="page-header">
       <nav>
-        <a href="/">WebStudio</a>
+        <a href="./index.html" class="logo"><span>Web</span>Studio</a>
 
-        <ul>
-          <li><a href="">Студія</a></li>
-          <li><a href="">Портфоліо</a></li>
-          <li><a href="">Контакти</a></li>
+        <ul class="site-nav list">
+          <li><a href="" class="link current">Студія</a></li>
+          <li><a href="./portfolio.html" class="link">Портфоліо</a></li>
+          <li><a href="" class="link">Контакти</a></li>
         </ul>
       </nav>
 
-      <ul>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+      <ul class="list">
+        <li><a href="mailto:info@devstudio.com" class="contacts">info@devstudio.com</a></li>
+        <li><a href="tel:+380961111111" class="contacts">+38 096 111 11 11</a></li>
       </ul>
     </header>
     <main>
       <!-- Герой -->
-      <section>
-        <h1>Ефективні рішення для <br />вашого бізнесу</h1>
-        <button type="button">Замовити послугу</button>
+      <section class="hero">
+        <h1 class="hero-title">Ефективні рішення для <br />вашого бізнесу</h1>
+        <button type="button" class="button">Замовити послугу</button>
       </section>
       <!-- Особливості -->
-      <section>
-        <h2>Особливості</h2>
-        <ul>
+      <section class="features">
+        <h2 class="features-title">Особливості</h2>
+        <ul class="feature-list list">
           <li>
-            <h3>УВАГА ДО ДЕТАЛЕЙ</h3>
-            <p>Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+            <h3 class="title">УВАГА ДО ДЕТАЛЕЙ</h3>
+            <p class="text">
+              Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
+            </p>
           </li>
           <li>
-            <h3>ПУНКТУАЛЬНІСТЬ</h3>
-            <p>Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+            <h3 class="title">ПУНКТУАЛЬНІСТЬ</h3>
+            <p class="text">
+              Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
+            </p>
           </li>
           <li>
-            <h3>ПЛАНУВАННЯ</h3>
-            <p>Так само консультація з широким активом значною мірою зумовлює.</p>
+            <h3 class="title">ПЛАНУВАННЯ</h3>
+            <p class="text">Так само консультація з широким активом значною мірою зумовлює.</p>
           </li>
           <li>
-            <h3>СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-            <p>Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+            <h3 class="title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+            <p class="text">
+              Значимість цих проблем настільки очевидна, що реалізація планових завдань.
+            </p>
           </li>
         </ul>
       </section>
       <!-- Чим ми займаємося -->
-      <section>
-        <h2>Чим ми займаємося</h2>
-        <ul>
+      <section class="section">
+        <h2 class="section-title">Чим ми займаємося</h2>
+        <ul class="work-list list">
           <li>
             <img
               src="./images/notepad_with_hands_over_keyboard.jpg"
@@ -81,40 +92,40 @@
         </ul>
       </section>
       <!-- Наша команда -->
-      <section>
-        <h2>Наша команда</h2>
-        <ul>
+      <section class="section">
+        <h2 class="section-title">Наша команда</h2>
+        <ul class="team-list list">
           <li>
             <img src="./images/Igor_Demyanenko.jpg" alt="фото Ігоря Дем'яненко" width="270" />
-            <h3>Ігор Дем'яненко</h3>
-            <p lang="en">Product Designer</p>
+            <h3 class="title">Ігор Дем'яненко</h3>
+            <p lang="en" class="text">Product Designer</p>
           </li>
           <li>
             <img src="./images/Olga_Repina.jpg" alt="фото Ольги Рєпіної" width="270" />
-            <h3>Ольга Рєпіна</h3>
-            <p lang="en">Frontend Developer</p>
+            <h3 class="title">Ольга Рєпіна</h3>
+            <p lang="en" class="text">Frontend Developer</p>
           </li>
           <li>
             <img src="./images/Mukola_Tarasov.jpg" alt="фото Миколи Тарасова" width="270" />
-            <h3>Микола Тарасов</h3>
-            <p lang="en">Marketing</p>
+            <h3 class="title">Микола Тарасов</h3>
+            <p lang="en" class="text">Marketing</p>
           </li>
           <li>
             <img src="./images/Michal_Ermakov.jpg" alt="фото Михайла Єрмакова" width="270" />
-            <h3>Михайло Єрмаков</h3>
-            <p lang="en">UI Designer</p>
+            <h3 class="title">Михайло Єрмаков</h3>
+            <p lang="en" class="text">UI Designer</p>
           </li>
         </ul>
       </section>
     </main>
     <!-- Футер -->
-    <footer>
-      <a href="/">WebStudio</a>
+    <footer class="footer">
+      <a href="/" class="logo"><span>Web</span>Studio</a>
       <address>
-        <ul>
-          <li><a href="/">м. Київ, пр-т Лесі Українки, 26</a></li>
-          <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <ul class="list">
+          <li><a href="/" class="address footer">м. Київ, пр-т Лесі Українки, 26</a></li>
+          <li><a href="mailto:info@devstudio.com" class="contacts">info@devstudio.com</a></li>
+          <li><a href="tel:+380961111111" class="contacts">+38 096 111 11 11</a></li>
         </ul>
       </address>
     </footer>
