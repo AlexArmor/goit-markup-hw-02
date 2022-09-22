@@ -5,6 +5,10 @@
   --primary-bg-color: #ffffff;
   --logo-font-size: 26px;
   --logo-line-height: 1.19;
+  --footer-background-color: #2f303a;
+  --logo-black-color: #000000;
+  --projects-button-color: #f5f4fa;
+  --footer-contacts-color: rgba(255, 255, 255, 0.6);
 }
 
 .list {
@@ -21,14 +25,14 @@ body {
 }
 
 .logo {
-  color: #000000;
+  color: var(--logo-black-color);
   font-family: Raleway, sans-serif;
   font-size: var(--logo-font-size);
   line-height: var(--logo-line-height);
   text-decoration: none;
 }
 
-.logo > span {
+.logo .span {
   color: var(--accent-color);
 }
 
@@ -53,12 +57,13 @@ body {
 
 .page-header .contacts {
   color: var(--primary-text-color);
+  font-weight: 500;
   letter-spacing: 0.02em;
   text-decoration: none;
 }
 
 .hero {
-  background-color: #2f303a;
+  background-color: var(--footer-background-color);
 }
 
 .hero-title {
@@ -84,14 +89,17 @@ body {
   font-size: 16px;
   line-height: 1.87;
   font-weight: 700;
+  letter-spacing: 0.06em;
 }
 
 .projects .button {
   color: var(--title-text-color);
-  background-color: #f5f4fa;
+  background-color: var(--projects-button-color);
+  font-weight: 500;
   border-color: transparent;
   font-family: inherit;
   line-height: 1.62;
+  letter-spacing: 0.03em;
 }
 
 .section-title {
@@ -109,6 +117,7 @@ body {
 .feature-list .title {
   font-weight: 700;
   text-transform: uppercase;
+  font-size: 14px;
 }
 
 .feature-list .text {
@@ -123,7 +132,7 @@ body {
 }
 
 .footer {
-  background-color: #2f303a;
+  background-color: var(--footer-background-color);
   color: var(--primary-bg-color);
   line-height: 1.71;
   font-style: normal;
@@ -137,7 +146,7 @@ body {
 .footer .contacts {
   text-decoration: none;
   font-style: normal;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--footer-contacts-color);
 }
 
 .projects .button:hover,
